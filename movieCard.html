@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.movie-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 20px;
+}
+
+/* Movie card styling */
+.movie-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.movie-card h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.movie-card p {
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Button styling */
+.book-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.book-btn:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <section class="movie-container">
+        <div class="movie-card">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2024-09-18/Screenshot%202024-09-18%20161235_980916.png" alt="Doctor Strange 2">
+            <h2>Doctor Strange 2</h2>
+            <p>Rating: 4.5</p>
+            <button class="book-btn">Book now</button>
+        </div>
+        <div class="movie-card">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2024-09-18/Screenshot%202024-09-18%20161235_980916.png" alt="Bhool Bhulaiyaa 2">
+            <h2>Bhool Bhulaiyaa 2</h2>
+            <p>Rating: 4.5</p>
+            <button class="book-btn">Book now</button>
+        </div>
+        <div class="movie-card">
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2024-09-18/Screenshot%202024-09-18%20161235_980916.png" alt="Jayeshbhai Jordaar">
+            <h2>Jayeshbhai Jordaar</h2>
+            <p>Rating: 4.5</p>
+            <button class="book-btn">Book now</button>
+        </div>
+    </section>
+</body>
+</html>
